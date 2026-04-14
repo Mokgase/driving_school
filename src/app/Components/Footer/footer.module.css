@@ -1,0 +1,131 @@
+.footer {
+  background: #1a2332;
+  color: #ccc;
+}
+
+.top {
+  display: flex;
+  gap: 60px;
+  padding: 56px 60px 40px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.brand {
+  flex: 0 0 280px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logoIcon {
+  font-size: 26px;
+}
+
+.logoText {
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  color: #fff;
+}
+
+.tagline {
+  font-size: 13px;
+  line-height: 1.6;
+  color: #9aa5b4;
+  max-width: 220px;
+}
+
+.linksGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.groupTitle {
+  font-size: 14px;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.linkList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.linkList li a {
+  font-size: 13px;
+  color: #9aa5b4;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.linkList li a:hover {
+  color: #e8b84b;
+}
+
+.bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 60px;
+}
+
+.copyright {
+  font-size: 12px;
+  color: #6b7a8d;
+}
+
+.socials {
+  display: flex;
+  gap: 12px;
+}
+
+.socialIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.08);
+  color: #ccc;
+  font-size: 12px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: background 0.2s, color 0.2s;
+}
+
+.socialIcon:hover {
+  background: #e8b84b;
+  color: #1a1a1a;
+}
+
+@media (max-width: 768px) {
+  .top {
+    flex-direction: column;
+    padding: 40px 24px 32px;
+    gap: 32px;
+  }
+
+  .brand {
+    flex: none;
+  }
+
+  .bottom {
+    flex-direction: column;
+    gap: 16px;
+    padding: 20px 24px;
+  }
+}
