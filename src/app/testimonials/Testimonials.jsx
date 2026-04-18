@@ -1,5 +1,5 @@
-import styles from "../../Style/testimonials.module.css";
-import testimonials from "../../Utils/testimonials";
+import styles from "../Style/testimonials.module.css";
+import testimonials from "../Utils/testimonials";
 
 
 export default function Testimonials() {

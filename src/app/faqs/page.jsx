@@ -1,12 +1,12 @@
 import Navbar from "../Components/Navbar/Navbar";
-import FAQ from "../Components/FAQ's/FAQ";
-import Footer from "../Components/Footer/Footer";
+import FAQ from "./FAQ";
+import Footer from "../Footer/Footer";
 
 export const metadata = {
   title: "FAQs | Driving School",
 };
 
-export default function FAQsPage() {
+export default function FAQPage() {
   return (
     <>
       <Navbar />

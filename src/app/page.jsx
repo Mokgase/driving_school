@@ -1,8 +1,8 @@
 import Navbar from "./Components/Navbar/Navbar";
 import Hero from "./Components/Hero/Hero";
-import Programs from "./Components/Programs/Programs";
+import Programs from "./Programs/Programs";
 import WhyChooseUs from "./Components/WhyChooseUs/WhyChooseUs";
-import Footer from "./Components/Footer/Footer";
+import Footer from "./Footer/Footer";
 
 export default function Home() {
   return (

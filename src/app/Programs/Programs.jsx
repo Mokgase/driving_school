@@ -1,4 +1,4 @@
-import styles from "../../Style/programs.module.css";
+import styles from "../Style/programs.module.css";
 
 const programs = [
   {

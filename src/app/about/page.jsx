@@ -1,6 +1,6 @@
 import Navbar from "../Components/Navbar/Navbar";
-import About from "../Components/About/About";
-import Footer from "../Components/Footer/Footer";
+import About from "./About";
+import Footer from "../Footer/Footer";
 
 export const metadata = {
   title: "About Us | Driving School",

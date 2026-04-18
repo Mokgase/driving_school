@@ -1,6 +1,6 @@
 import Navbar from "../Components/Navbar/Navbar";
-import Testimonials from "../Components/Testimonials/Testimonials";
-import Footer from "../Components/Footer/Footer";
+import Testimonials from "./Testimonials";
+import Footer from "../Footer/Footer";
 
 export const metadata = {
   title: "Testimonials | Driving School",

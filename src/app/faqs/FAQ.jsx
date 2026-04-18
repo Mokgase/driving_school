@@ -1,6 +1,6 @@
 "use client";
 import { useState } from "react";
-import styles from "../../Style/faq.module.css";
+import styles from "../Style/faq.module.css";
 
 const faqs = [
   {
