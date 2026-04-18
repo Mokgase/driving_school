@@ -23,6 +23,15 @@
   border-radius: 2px;
 }
 
+.subheading {
+  font-size: 1.15rem;
+  opacity: 0.8;
+  max-width: 940px;
+  margin: auto;
+  margin-bottom: 10rem;
+  color: #666;
+}
+
 .grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);

@@ -1,4 +1,5 @@
 import styles from "../Style/contact.module.css";
+import Button from "../Components/Button";
 
 export default function Contact() {
   return (
@@ -12,10 +13,9 @@ export default function Contact() {
 
       <div className={styles.container}>
         <div className={styles.info}>
-          <h2>Get In Touch</h2>
+          <h2>Our Office</h2>
 
           <div className={styles.infoItem}>
-            <span className={styles.infoIcon}>📍</span>
             <div>
               <p className={styles.infoLabel}>Address</p>
               <p className={styles.infoText}>123 Main Street, Pretoria, 0001</p>
@@ -23,15 +23,14 @@ export default function Contact() {
           </div>
 
           <div className={styles.infoItem}>
-            <span className={styles.infoIcon}>📞</span>
             <div>
               <p className={styles.infoLabel}>Phone</p>
               <p className={styles.infoText}>+27 12 345 6789</p>
+              <p className={styles.infoText}>011 345 6789</p>
             </div>
           </div>
 
           <div className={styles.infoItem}>
-            <span className={styles.infoIcon}>✉️</span>
             <div>
               <p className={styles.infoLabel}>Email</p>
               <p className={styles.infoText}>info@drivingschool.co.za</p>
@@ -39,7 +38,6 @@ export default function Contact() {
           </div>
 
           <div className={styles.infoItem}>
-            <span className={styles.infoIcon}>🕐</span>
             <div>
               <p className={styles.infoLabel}>Hours</p>
               <p className={styles.infoText}>Mon – Fri: 07:00 – 18:00</p>
@@ -49,7 +47,7 @@ export default function Contact() {
         </div>
 
         <form className={styles.form}>
-          <h2>Send a Message</h2>
+          <h2><span style={{ color: "#d4a23a" }}>Get in </span><span style={{ color: "#000000" }}>Touch</span></h2>
 
           <div className={styles.row}>
             <div className={styles.field}>
@@ -81,9 +79,8 @@ export default function Contact() {
             />
           </div>
 
-          <button type="submit" className={styles.submit}>
-            Send Message
-          </button>
+          <Button value={"Book now"} text={"BOOK NOW"}/>
+
         </form>
       </div>
     </section>

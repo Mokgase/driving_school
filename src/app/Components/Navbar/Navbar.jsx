@@ -1,11 +1,17 @@
 import Link from "next/link";
+import Image from "next/image";
 import styles from "../../Style/navbar.module.css";
 
 export default function Navbar() {
   return (
     <nav className={styles.navbar}>
       <div className={styles.logo}>
-        <span className={styles.logoIcon}>🚗</span>
+        <Image 
+          src="/Assets/images/website_logo.png" 
+          alt="Driving School Logo" 
+          width={100} 
+          height={50} 
+          className={styles.logoIcon} />
         <span className={styles.logoText}>DRIVING SCHOOL</span>
       </div>
       <ul className={styles.navLinks}>

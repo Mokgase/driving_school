@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import styles from "../Style/footer.module.css";
 
 export default function Footer() {
@@ -7,11 +8,17 @@ export default function Footer() {
       <div className={styles.top}>
         <div className={styles.brand}>
           <div className={styles.logo}>
-            <span className={styles.logoIcon}>🚗</span>
+            <Image 
+              src="/Assets/images/website_logo.png" 
+              alt="Driving School Logo" 
+              width={130} 
+              height={50} 
+              className={styles.logoIcon} 
+            />
             <span className={styles.logoText}>DRIVING SCHOOL</span>
           </div>
           <p className={styles.tagline}>
-            Your journey to safe and confident driving starts here.
+            We offer a reputable, professional driving service focused on building your confidence to pass your test and drive safely on South African roads.
           </p>
         </div>
 
