@@ -1,24 +1,38 @@
-import styles from "./hero.module.css";
+import styles from "../../Style/hero.module.css";
+import Button from "../../Components/Button";
+import Image from "next/image";
+import heroImg from "../../../../public/Assets/images/heroImg.png";
 
 export default function Hero() {
   return (
     <section className={styles.hero}>
-      <div className={styles.imagePanel}>
+      {/* <div className={styles.imagePanel}>
         <div className={styles.imagePlaceholder}></div>
         <div className={styles.stripeOverlay}></div>
+      </div> */}
+      <div className={styles.row}>
+        <div className={styles.column1}>
+          <div className={styles.hero_image}>
+            <Image
+              src={heroImg} 
+              alt="hero image" 
+              width={500} 
+              height={370} 
+              placeholder="blur" 
+              className="w-[80%] h-auto"
+            />
+          </div>
+        </div>
       </div>
 
       <div className={styles.contentPanel}>
         <h1 className={styles.heading}>Are you ready?</h1>
         <p className={styles.subtext}>
-          Finding the perfect driving instructor has never been easier. Our
-          certified instructors are here to guide you every step of the way,
-          from your very first lesson to passing your test with confidence.
+          You’re ready to begin driving lessons when you’re motivated to learn, build confidence, and take control behind the wheel. 
+          Whether you’re starting from scratch or looking to improve your skills, 
+          Driving School supports you every step of the way at your pace, with patience and professional guidance.
         </p>
-        <div className={styles.ctaBanner}>
-          <p className={styles.ctaText}>Schedule Your Driving Lessons with Us!</p>
-          <p className={styles.phone}>+27 12 345 6789</p>
-        </div>
+      <Button value={"BOOK NOW"} text={"BOOK NOW"}/>
       </div>
     </section>
   );

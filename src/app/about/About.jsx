@@ -24,7 +24,7 @@ export default function About() {
           <div className={styles.story}>
             <h2>Our Story</h2>
             <p>
-              Vellys Driving School understands that learners have busy schedules. That's why our lessons are designed to be flexible, allowing students to learn at their own pace and book sessions when it suits them. Unlike rigid training programmes, we focus on convenience, making it easier to balance driving lessons with school, work, and daily life.
+              Driving School understands that learners have busy schedules. That's why our lessons are designed to be flexible, allowing students to learn at their own pace and book sessions when it suits them. Unlike rigid training programmes, we focus on convenience, making it easier to balance driving lessons with school, work, and daily life.
               -Convenient lesson scheduling available six days a week
               -Patient, supportive instruction for nervous drivers and elderly learners
               -High-quality driving lessons at fair, affordable rates
