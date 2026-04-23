@@ -1,12 +1,45 @@
 .hero {
   display: flex;
+  flex-direction: column;
   min-height: 520px;
   width: 100%;
 }
 
-.hero_image{
-  
-} 
+.heroBanner {
+  position: relative;
+  width: 100%;
+}
+
+.bannerImg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.bannerOverlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  text-align: center;
+}
+
+.bannerSubtext {
+  font-size: 16px;
+  font-weight: 500;
+  color: #fff;
+  letter-spacing: 0.5px;
+}
+
+.bannerHeading {
+  font-size: 52px;
+  font-weight: 800;
+  color: #fff;
+  line-height: 1.15;
+}
 
 .row {
   display: flex;
@@ -17,9 +50,15 @@
   padding: 0 2rem;
 }
 
-.column1,
+.column1 {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .column2 {
-  width: 49%;
+  width: 50%;
   display: flex;
   align-items: center;
   justify-content: center;

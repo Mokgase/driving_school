@@ -1,6 +1,6 @@
 import Navbar from "./Components/Navbar/Navbar";
 import Hero from "./Components/Hero/Hero";
-import Programs from "./Programs/Programs";
+import Programs from "./programs/Programs";
 import WhyChooseUs from "./Components/WhyChooseUs/WhyChooseUs";
 import Footer from "./Footer/Footer";
 

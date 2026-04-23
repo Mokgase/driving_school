@@ -82,14 +82,17 @@ export default function About() {
             <Image
               src={social.src}
               alt={social.title}
-              height={96}
-              width={96}
+              height={240}
+              width={240}
               quality={100}
               className={styles.social_image}
             />
             <p className={styles.socials_title}>{social.title}</p>
           </div>
         ))}
+      </div>
+      <div className={styles.buttonCenter}>
+        <Button value={"Book now"} text={"BOOK NOW"}/>
       </div>
     </section>
   );
