@@ -64,6 +64,18 @@
   justify-content: center;
 }
 
+.heroImage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.heroImg {
+  width: 80%;
+  height: auto;
+}
+
 .imagePanel {
   position: relative;
   flex: 0 0 58%;

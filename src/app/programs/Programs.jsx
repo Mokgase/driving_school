@@ -15,7 +15,7 @@ export default function Programs() {
               <div className={styles.cardBody}>
                 <h3 className={styles.cardTitle}>{program.title}</h3>
                 <p className={styles.cardText}>{program.description}</p>
-                <Button value={"Learn More"} text={"LEARN MORE"} />
+                <Button text={"LEARN MORE"} />
               </div>
             </div>
           ))}

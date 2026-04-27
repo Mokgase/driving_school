@@ -5,7 +5,7 @@ export const aboutUsImages = [
 ];
 
 export const socialImages = [
-    {src: '/Assets/images/tiktok.png', title: 'TikTok'},
-    {src: '/Assets/images/instagram.png', title: 'Instagram'},
-    {src: '/Assets/images/facebook.png', title: 'Facebook'},
+    {src: '/Assets/images/tiktok.png', title: 'TikTok', url:'https://www.tiktok.com/en/'},
+    {src: '/Assets/images/instagram.png', title: 'Instagram', url:'https://www.instagram.com'},
+    {src: '/Assets/images/facebook.png', title: 'Facebook', url:'https://www.facebook.com'},
 ];

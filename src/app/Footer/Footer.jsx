@@ -48,10 +48,10 @@ export default function Footer() {
           &copy; {new Date().getFullYear()} Driving School. All rights reserved.
         </p>
         <div className={styles.socials}>
-          <a href="#" aria-label="Facebook" className={styles.socialIcon}>f</a>
-          <a href="#" aria-label="Twitter" className={styles.socialIcon}>𝕏</a>
-          <a href="#" aria-label="Instagram" className={styles.socialIcon}>in</a>
-          <a href="#" aria-label="LinkedIn" className={styles.socialIcon}>li</a>
+          <a href="https://facebook.com" aria-label="Facebook" target="_blank" rel="noopener noreferrer" className={styles.socialIcon}>f</a>
+          <a href="https://x.com" aria-label="X / Twitter" target="_blank" rel="noopener noreferrer" className={styles.socialIcon}>𝕏</a>
+          <a href="https://instagram.com" aria-label="Instagram" target="_blank" rel="noopener noreferrer" className={styles.socialIcon}>in</a>
+          <a href="https://linkedin.com" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer" className={styles.socialIcon}>li</a>
         </div>
       </div>
     </footer>

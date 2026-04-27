@@ -27,14 +27,14 @@ export default function Hero() {
       <PageBreak/>
       <div className={styles.row}>
         <div className={styles.column1}>
-          <div className={styles.hero_image}>
+          <div className={styles.heroImage}>
             <Image
               src={heroImg}
               alt="hero image"
               width={500}
               height={370}
               placeholder="blur"
-              className="w-[80%] h-auto"
+              className={styles.heroImg}
             />
           </div>
         </div>
@@ -47,20 +47,12 @@ export default function Hero() {
             Driving School supports you every step of the way at your pace, with patience and professional guidance.
           </p>
           <ul>
-            <ol>
-              Have a learner's license or are preparing to get one
-            </ol>
-            <ol>
-              Want to gain confidence on real roads
-            </ol>
-            <ol>
-              Feel nervous but are eager to learn and improve
-            </ol>
-            <ol>
-              Need structured guidance for the K53 driving test
-            </ol>
+            <li>Have a learner's license or are preparing to get one</li>
+            <li>Want to gain confidence on real roads</li>
+            <li>Feel nervous but are eager to learn and improve</li>
+            <li>Need structured guidance for the K53 driving test</li>
           </ul>
-        <Button value={"BOOK NOW"} text={"BOOK NOW"}/>
+        <Button text={"BOOK NOW"}/>
       </div>
       </div>
       </div>

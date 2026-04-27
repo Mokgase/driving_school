@@ -18,7 +18,7 @@ export default function About() {
       </div>
       <div className={styles.row}>
         <div className={styles.column1}>
-          <Image src={aboutus} alt="about us image" width={500} height={370} placeholder="blur" className="w-[80%] h-auto"/>
+          <Image src={aboutus} alt="about us image" width={500} height={370} placeholder="blur" className={styles.aboutImg}/>
         </div>
         <div className={styles.column2}>
           <div className={styles.story}>
@@ -72,13 +72,14 @@ export default function About() {
           <p className={styles.subheading}>
             Choosing our driving School will put you on the road as a better driver
           </p>
-          <Button value={"Book now"} text={"BOOK NOW"}/>
+          <Button text={"BOOK NOW"}/>
         </div>
       </div>
       <PageBreak />
       <div className={styles.socials_grid}>
         {socialImages.map((social, index) => (
           <div key={index} className={styles.social_item}>
+            <a href={social.url} target="_blank" rel="noopener noreferrer">
             <Image
               src={social.src}
               alt={social.title}
@@ -87,12 +88,13 @@ export default function About() {
               quality={100}
               className={styles.social_image}
             />
+            </a>
             <p className={styles.socials_title}>{social.title}</p>
           </div>
         ))}
       </div>
       <div className={styles.buttonCenter}>
-        <Button value={"Book now"} text={"BOOK NOW"}/>
+        <Button text={"BOOK NOW"}/>
       </div>
     </section>
   );

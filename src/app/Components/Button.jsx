@@ -1,20 +1,14 @@
 'use client';
 
-import React, { useState } from 'react'
+import React from 'react'
 import styles from '../Style/button.module.css';
 
 const Button = ({onClick, text, type, disabled}) => {
-  const [isHovered, setIsHovered] = useState(false);
-
-
   return (
     <button className={`${styles.roundedButton} ${disabled ? styles.disabled : ''}`}
             type={type || 'button'}
             onClick={onClick}
-            disabled={disabled}
-            onMouseEnter={()=> setIsHovered(true)}
-            onMouseLeave={()=> setIsHovered(false)}>
-       
+            disabled={disabled}>
         <p className={styles.text}>{text}</p>
     </button>
   )

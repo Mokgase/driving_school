@@ -3,6 +3,11 @@
   padding-bottom: 4rem;
 }
 
+.aboutImg {
+  width: 80%;
+  height: auto;
+}
+
 .hero {
   /* background: #1a1a2e; */
   /* color: #fff; */

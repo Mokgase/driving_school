@@ -1,7 +1,28 @@
+'use client';
+
+import { useState } from "react";
 import styles from "../Style/contact.module.css";
 import Button from "../Components/Button";
 
 export default function Contact() {
+  const [form, setForm] = useState({
+    firstName: '',
+    lastName: '',
+    email: '',
+    phone: '',
+    message: '',
+  });
+  const [submitted, setSubmitted] = useState(false);
+
+  function handleChange(e) {
+    setForm(prev => ({ ...prev, [e.target.id]: e.target.value }));
+  }
+
+  function handleSubmit(e) {
+    e.preventDefault();
+    setSubmitted(true);
+  }
+
   return (
     <section className={styles.section}>
       <div className={styles.hero}>
@@ -46,42 +67,51 @@ export default function Contact() {
           </div>
         </div>
 
-        <form className={styles.form}>
-          <h2><span style={{ color: "#d4a23a" }}>Get in </span><span style={{ color: "#000000" }}>Touch</span></h2>
+        {submitted ? (
+          <div className={styles.form}>
+            <h2><span style={{ color: "#d4a23a" }}>Thank </span><span style={{ color: "#000000" }}>You!</span></h2>
+            <p>We have received your message and will be in touch shortly.</p>
+          </div>
+        ) : (
+          <form className={styles.form} onSubmit={handleSubmit}>
+            <h2><span style={{ color: "#d4a23a" }}>Get in </span><span style={{ color: "#000000" }}>Touch</span></h2>
 
-          <div className={styles.row}>
-            <div className={styles.field}>
-              <label htmlFor="firstName">First Name</label>
-              <input id="firstName" type="text" placeholder="Your first name" />
+            <div className={styles.row}>
+              <div className={styles.field}>
+                <label htmlFor="firstName">First Name</label>
+                <input id="firstName" type="text" placeholder="Your first name" value={form.firstName} onChange={handleChange} required />
+              </div>
+              <div className={styles.field}>
+                <label htmlFor="lastName">Last Name</label>
+                <input id="lastName" type="text" placeholder="Your last name" value={form.lastName} onChange={handleChange} required />
+              </div>
             </div>
+
             <div className={styles.field}>
-              <label htmlFor="lastName">Last Name</label>
-              <input id="lastName" type="text" placeholder="Your last name" />
+              <label htmlFor="email">Email</label>
+              <input id="email" type="email" placeholder="your@email.com" value={form.email} onChange={handleChange} required />
             </div>
-          </div>
 
-          <div className={styles.field}>
-            <label htmlFor="email">Email</label>
-            <input id="email" type="email" placeholder="your@email.com" />
-          </div>
+            <div className={styles.field}>
+              <label htmlFor="phone">Phone Number</label>
+              <input id="phone" type="tel" placeholder="+27 ..." value={form.phone} onChange={handleChange} />
+            </div>
 
-          <div className={styles.field}>
-            <label htmlFor="phone">Phone Number</label>
-            <input id="phone" type="tel" placeholder="+27 ..." />
-          </div>
+            <div className={styles.field}>
+              <label htmlFor="message">Message</label>
+              <textarea
+                id="message"
+                rows={5}
+                placeholder="Tell us how we can help..."
+                value={form.message}
+                onChange={handleChange}
+                required
+              />
+            </div>
 
-          <div className={styles.field}>
-            <label htmlFor="message">Message</label>
-            <textarea
-              id="message"
-              rows={5}
-              placeholder="Tell us how we can help..."
-            />
-          </div>
-
-          <Button value={"Book now"} text={"BOOK NOW"}/>
-
-        </form>
+            <Button text={"BOOK NOW"} type={"submit"} />
+          </form>
+        )}
       </div>
     </section>
   );
