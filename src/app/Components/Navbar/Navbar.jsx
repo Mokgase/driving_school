@@ -6,12 +6,14 @@ export default function Navbar() {
   return (
     <nav className={styles.navbar}>
       <div className={styles.logo}>
-        <Image 
-          src="/Assets/images/website_logo.png" 
-          alt="Driving School Logo" 
-          width={100} 
-          height={50} 
-          className={styles.logoIcon} />
+        <Link href="/">
+          <Image 
+            src="/Assets/images/website_logo.png" 
+            alt="Driving School Logo" 
+            width={100} 
+            height={50} 
+            className={styles.logoIcon} />
+        </Link>
         <span className={styles.logoText}>DRIVING SCHOOL</span>
       </div>
       <ul className={styles.navLinks}>

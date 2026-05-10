@@ -1,9 +1,11 @@
 import styles from "../../Style/whychooseus.module.css";
 import whychooseus from "../../Utils/whychooseus";
 
+
 export default function WhyChooseUs() {
   return (
     <section className={styles.section}>
+      
       <h2 className={styles.heading}>Why Choose Us</h2>
       <p className={styles.subheading}>
         Driving School is committed to helping learners become confident, responsible, and safe drivers. 
