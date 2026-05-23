@@ -1,6 +1,7 @@
 import styles from "../Style/programs.module.css";
 import Button from "../Components/Button";
 import { programs } from "../Utils/programs";
+import Link from "next/link";
 
 export default function Programs() {
   const repeated = [...programs, ...programs, ...programs, ...programs];
@@ -15,7 +16,7 @@ export default function Programs() {
               <div className={styles.cardBody}>
                 <h3 className={styles.cardTitle}>{program.title}</h3>
                 <p className={styles.cardText}>{program.description}</p>
-                <Button text={"LEARN MORE"} />
+                <Link href="/book"><Button text={"BOOK NOW"} /></Link>
               </div>
             </div>
           ))}

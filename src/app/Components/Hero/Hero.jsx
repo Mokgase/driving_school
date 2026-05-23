@@ -1,6 +1,7 @@
 import styles from "../../Style/hero.module.css";
 import Button from "../../Components/Button";
 import Image from "next/image";
+import Link from "next/link";
 import heroImg from "../../../../public/Assets/images/heroImg.png";
 import homepage from "../../../../public/Assets/images/homepage.png"
 import PageBreak from "../PageBreak/pageBreak";
@@ -46,13 +47,13 @@ export default function Hero() {
             Whether you're starting from scratch or looking to improve your skills,
             Driving School supports you every step of the way at your pace, with patience and professional guidance.
           </p>
-          <ul>
-            <li>Have a learner's license or are preparing to get one</li>
+          <ul className={styles.subtext}>
+            <li >Have a learner's license or are preparing to get one</li>
             <li>Want to gain confidence on real roads</li>
             <li>Feel nervous but are eager to learn and improve</li>
             <li>Need structured guidance for the K53 driving test</li>
           </ul>
-        <Button text={"BOOK NOW"}/>
+        <Link href="/book"><Button text={"BOOK NOW"}/></Link>
       </div>
       </div>
       </div>

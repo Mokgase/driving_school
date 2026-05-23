@@ -4,6 +4,7 @@ import aboutus from "../../../public/Assets/images/aboutus.png"
 import { aboutUsImages, socialImages } from "../Utils/images";
 import Button from "../Components/Button";
 import PageBreak from "../Components/PageBreak/pageBreak";
+import Link from "next/link";
 
 export default function About() {
   return (
@@ -72,7 +73,7 @@ export default function About() {
           <p className={styles.subheading}>
             Choosing our driving School will put you on the road as a better driver
           </p>
-          <Button text={"BOOK NOW"}/>
+          <Link href="/book"><Button text={"BOOK NOW"}/></Link>
         </div>
       </div>
       <PageBreak />
@@ -94,7 +95,7 @@ export default function About() {
         ))}
       </div>
       <div className={styles.buttonCenter}>
-        <Button text={"BOOK NOW"}/>
+        <Link href="/book"><Button text={"BOOK NOW"}/></Link>
       </div>
     </section>
   );
