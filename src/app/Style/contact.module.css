@@ -37,6 +37,14 @@
   .container {
     grid-template-columns: 1fr;
   }
+
+  .hero {
+    padding: 3rem 1.5rem 2rem;
+  }
+
+  .heading {
+    font-size: 2rem;
+  }
 }
 
 .info {

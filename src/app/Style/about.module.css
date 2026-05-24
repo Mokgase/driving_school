@@ -189,7 +189,50 @@
 }
 
 @media (max-width: 768px) {
+  .row {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .column1,
+  .column2 {
+    width: 100%;
+  }
+
+  .aboutImg {
+    width: 90%;
+  }
+
   .images_grid {
     grid-template-columns: 1fr;
+  }
+
+  .socials_grid {
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 3rem 1.5rem;
+    justify-content: center;
+  }
+
+  .social_image {
+    width: 140px;
+    height: 140px;
+  }
+
+  .hero {
+    padding: 3rem 1.5rem 2rem;
+  }
+
+  .hero2 {
+    padding: 3rem 1.5rem 2rem;
+  }
+
+  .heading {
+    font-size: 26px;
+    margin-bottom: 1.5rem;
+  }
+
+  .subheading {
+    font-size: 1rem;
   }
 }

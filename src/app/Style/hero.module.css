@@ -162,20 +162,38 @@
     flex-direction: column;
   }
 
-  .imagePanel {
-    flex: none;
-    height: 280px;
+  .bannerHeading {
+    font-size: 28px;
   }
 
-  .imagePlaceholder {
-    min-height: 280px;
+  .bannerSubtext {
+    font-size: 13px;
+  }
+
+  .row {
+    flex-direction: column;
+    gap: 0;
+    margin: 2rem auto;
+  }
+
+  .column1,
+  .column2 {
+    width: 100%;
+  }
+
+  .heroImg {
+    width: 70%;
   }
 
   .contentPanel {
-    padding: 40px 24px;
+    padding: 28px 24px;
   }
 
   .heading {
-    font-size: 32px;
+    font-size: 28px;
+  }
+
+  .subtext {
+    max-width: 100%;
   }
 }
